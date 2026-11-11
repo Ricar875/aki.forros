@@ -1,1 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aki Forros | Forros PVC, Drywall e Divisórias em Paulo Afonso - BA</title>
+<meta name="description" content="Aki Forros: forro de PVC, gesso acartonado (drywall), fibra mineral, divisórias de eucatex e portas sanfonadas em Paulo Afonso - BA. Peça seu orçamento pelo WhatsApp.">
+<meta name="theme-color" content="#0b3d91">
+<style>
+:root{--azul:#0b3d91;--azul2:#1769d6;--verm:#d62828;--amar:#ffc800;--txt:#1b1f2a;--bg:#f5f7fb;--wpp:#25d366}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',Roboto,Arial,sans-serif;color:var(--txt);background:var(--bg);line-height:1.55}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 18px}
+header{position:sticky;top:0;z-index:50;background:var(--azul);color:#fff;box-shadow:0 2px 10px #0004}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-family:Impact,'Arial Black',sans-serif;font-size:1.6rem;letter-spacing:1px;color:var(--amar);text-shadow:2px 2px 0 var(--verm)}
+nav a{margin-left:16px;font-weight:600;font-size:.92rem}
+nav a:hover{color:var(--amar)}
+@media(max-width:700px){nav a.h{display:none}}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:50px;font-weight:700;border:0;cursor:pointer;font-size:1rem;transition:.2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-w{background:var(--wpp);color:#fff;box-shadow:0 4px 14px #25d36666}
+.btn-y{background:var(--amar);color:#222}
+.btn-o{background:#fff;color:var(--azul)}
+.hero{background:linear-gradient(135deg,var(--azul),var(--azul2));color:#fff;padding:70px 0 80px;text-align:center}
+.hero h1{font-size:clamp(2rem,6vw,3.4rem);line-height:1.1;margin-bottom:14px}
+.hero h1 span{color:var(--amar)}
+.hero p{max-width:640px;margin:0 auto 26px;font-size:1.1rem;opacity:.95}
+.hero .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.faixa{background:var(--verm);color:#fff;text-align:center;padding:12px;font-weight:700;letter-spacing:.5px}
+section{padding:60px 0}
+h2{font-size:clamp(1.6rem,4vw,2.2rem);color:var(--azul);margin-bottom:8px;text-align:center}
+.sub{text-align:center;color:#555;margin-bottom:34px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:#fff;border-radius:16px;padding:24px;box-shadow:0 4px 16px #0001;border-top:5px solid var(--amar);transition:.2s}
+.card:hover{transform:translateY(-4px)}
+.card .ic{font-size:2.2rem;margin-bottom:8px}
+.card h3{color:var(--azul);margin-bottom:6px}
+.card p{font-size:.95rem;color:#444;margin-bottom:12px}
+.card a{color:var(--verm);font-weight:700;font-size:.9rem}
+.dif{background:#fff}
+.nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px;text-align:center}
+.nums div{padding:20px;border-radius:14px;background:var(--bg)}
+.nums b{display:block;font-size:2rem;color:var(--verm)}
+.passos{counter-reset:p;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.passo{background:#fff;border-radius:16px;padding:24px;position:relative;box-shadow:0 4px 16px #0001}
+.passo:before{counter-increment:p;content:counter(p);position:absolute;top:-14px;left:20px;background:var(--verm);color:#fff;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-weight:800}
+.orc{background:linear-gradient(135deg,var(--azul),var(--azul2));color:#fff}
+.orc h2{color:#fff}.orc .sub{color:#dfe9ff}
+form{background:#fff;color:var(--txt);border-radius:18px;padding:26px;max-width:620px;margin:0 auto;box-shadow:0 8px 30px #0003}
+label{display:block;font-weight:600;font-size:.9rem;margin:12px 0 4px}
+input,select,textarea{width:100%;padding:12px;border:2px solid #dde3ee;border-radius:10px;font:inherit}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--azul2)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:560px){.row{grid-template-columns:1fr}}
+form .btn{width:100%;justify-content:center;margin-top:18px}
+.ops{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-bottom:34px}
+.op{background:#fff;border-radius:16px;padding:22px;box-shadow:0 4px 16px #0001;border-left:5px solid var(--amar)}
+.op .est{color:#f5a300;letter-spacing:2px}
+.op small{color:#666;display:block;margin-top:8px}
+.vazio{text-align:center;background:#fff;padding:26px;border-radius:16px;border:2px dashed #cbd5e8;margin-bottom:30px;color:#555}
+.estrelas{display:flex;gap:6px;flex-direction:row-reverse;justify-content:flex-end}
+.estrelas input{display:none}
+.estrelas label{font-size:2rem;color:#ccc;cursor:pointer;margin:0}
+.estrelas input:checked~label,.estrelas label:hover,.estrelas label:hover~label{color:#f5a300}
+.contato .grid{align-items:stretch}
+.info{background:#fff;border-radius:16px;padding:24px;box-shadow:0 4px 16px #0001}
+.info p{margin:8px 0}
+.mapa{border:0;width:100%;height:100%;min-height:260px;border-radius:16px}
+footer{background:#0a2559;color:#cfd9f1;text-align:center;padding:30px 18px;font-size:.9rem}
+footer b{color:var(--amar)}
+.flut{position:fixed;right:16px;bottom:16px;z-index:60;display:flex;flex-direction:column;gap:10px}
+.flut a{background:var(--wpp);color:#fff;border-radius:50px;padding:12px 18px;font-weight:700;box-shadow:0 4px 16px #0006;font-size:.9rem;display:flex;gap:8px;align-items:center}
+.flut a:nth-child(2){background:#128c7e}
+</style>
+</head>
+<body>
 
+<header>
+  <div class="wrap">
+    <a href="#topo" class="logo">AKI FORROS</a>
+    <nav>
+      <a class="h" href="#servicos">Serviços</a>
+      <a class="h" href="#como">Como funciona</a>
+      <a class="h" href="#opinioes">Opiniões</a>
+      <a href="#orcamento" class="btn btn-y" style="padding:8px 16px;font-size:.9rem">Orçamento</a>
+    </nav>
+  </div>
+</header>
+
+<div id="topo" class="hero">
+  <div class="wrap">
+    <h1>A sua casa <span>mais bela!</span></h1>
+    <p>Forros de PVC, gesso acartonado (drywall), fibra mineral, divisórias e portas sanfonadas. Acabamento caprichado e atendimento rápido em Paulo Afonso e região.</p>
+    <div class="cta">
+      <a class="btn btn-w" data-wpp="Juba" href="#">💬 Falar com o Juba</a>
+      <a class="btn btn-w" data-wpp="Galego" href="#" style="background:#128c7e">💬 Falar com o Galego</a>
+      <a class="btn btn-o" href="#orcamento">📐 Pedir orçamento</a>
+    </div>
+  </div>
+</div>
+<div class="faixa">🏠 Orçamento rápido pelo WhatsApp • Atendemos Paulo Afonso e região</div>
+
+<section id="servicos">
+  <div class="wrap">
+    <h2>Nossos serviços</h2>
+    <p class="sub">Tudo para transformar o ambiente da sua casa, loja ou empresa.</p>
+    <div class="grid">
+      <div class="card"><div class="ic">🏡</div><h3>Forro de PVC</h3><p>Bonito, durável, fácil de limpar e não apodrece. Opções lisas e amadeiradas.</p><a data-wpp="Juba" data-msg="Olá! Quero orçamento de forro de PVC." href="#">Pedir orçamento →</a></div>
+      <div class="card"><div class="ic">🧱</div><h3>Revestimento de parede em PVC</h3><p>Renove suas paredes com praticidade, sem sujeira e com ótimo acabamento.</p><a data-wpp="Juba" data-msg="Olá! Quero orçamento de revestimento de parede em PVC." href="#">Pedir orçamento →</a></div>
+      <div class="card"><div class="ic">⬜</div><h3>Forro de gesso acartonado (Drywall)</h3><p>Acabamento liso e moderno, com sancas e iluminação embutida.</p><a data-wpp="Galego" data-msg="Olá! Quero orçamento de forro de drywall." href="#">Pedir orçamento →</a></div>
+      <div class="card"><div class="ic">🏢</div><h3>Forro de fibra mineral</h3><p>Ideal para escritórios, clínicas e comércios. Prático e com boa acústica.</p><a data-wpp="Galego" data-msg="Olá! Quero orçamento de forro de fibra mineral." href="#">Pedir orçamento →</a></div>
+      <div class="card"><div class="ic">🚪</div><h3>Divisórias de eucatex e portas sanfonadas</h3><p>Divida ambientes com rapidez e economia.</p><a data-wpp="Galego" data-msg="Olá! Quero orçamento de divisória de eucatex / porta sanfonada." href="#">Pedir orçamento →</a></div>
+      <div class="card"><div class="ic">🧩</div><h3>Divisórias de drywall</h3><p>Paredes leves, limpas e com ótimo isolamento, sem obra pesada.</p><a data-wpp="Galego" data-msg="Olá! Quero orçamento de divisória de drywall." href="#">Pedir orçamento →</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="dif">
+  <div class="wrap">
+    <h2>Por que escolher a Aki Forros?</h2>
+    <p class="sub">Compromisso com o seu prazo, o seu bolso e o seu acabamento.</p>
+    <div class="nums">
+      <div><b>✔</b>Acabamento caprichado</div>
+      <div><b>⚡</b>Instalação rápida e limpa</div>
+      <div><b>💰</b>Orçamento sem compromisso</div>
+      <div><b>📍</b>Loja física no Centro</div>
+    </div>
+  </div>
+</section>
+
+<section id="como">
+  <div class="wrap">
+    <h2>Como funciona</h2>
+    <p class="sub">Simples assim, do primeiro contato até o forro pronto.</p>
+    <div class="passos">
+      <div class="passo"><h3>Você chama</h3><p>Manda mensagem no WhatsApp ou preenche o formulário abaixo.</p></div>
+      <div class="passo"><h3>Medimos e orçamos</h3><p>Combinamos a medição e você recebe o valor sem compromisso.</p></div>
+      <div class="passo"><h3>Instalamos</h3><p>Equipe experiente, serviço limpo e no prazo combinado.</p></div>
+      <div class="passo"><h3>Você aprova</h3><p>Só finalizamos quando você estiver satisfeito com o resultado.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="orcamento" class="orc">
+  <div class="wrap">
+    <h2>Peça seu orçamento</h2>
+    <p class="sub">Preencha e a gente te responde direto no WhatsApp.</p>
+    <form id="fOrc">
+      <div class="row">
+        <div><label for="o-nome">Seu nome</label><input id="o-nome" required placeholder="Ex.: Maria"></div>
+        <div><label for="o-bairro">Bairro / Cidade</label><input id="o-bairro" required placeholder="Ex.: Centro, Paulo Afonso"></div>
+      </div>
+      <label for="o-serv">O que você precisa?</label>
+      <select id="o-serv" required>
+        <option>Forro de PVC</option>
+        <option>Revestimento de parede em PVC</option>
+        <option>Forro de gesso acartonado (drywall)</option>
+        <option>Forro de fibra mineral</option>
+        <option>Divisória de eucatex / porta sanfonada</option>
+        <option>Divisória de drywall</option>
+        <option>Ainda não sei, quero ajuda</option>
+      </select>
+      <div class="row">
+        <div><label for="o-m2">Tamanho aproximado (m²)</label><input id="o-m2" placeholder="Ex.: 20"></div>
+        <div><label for="o-quem">Falar com</label>
+          <select id="o-quem"><option value="Juba">Juba</option><option value="Galego">Galego</option></select></div>
+      </div>
+      <label for="o-obs">Observações (opcional)</label>
+      <textarea id="o-obs" rows="3" placeholder="Conte um pouco do que você quer"></textarea>
+      <button class="btn btn-w" type="submit">💬 Enviar pelo WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<section id="opinioes">
+  <div class="wrap">
+    <h2>O que o pessoal da região diz</h2>
+    <p class="sub">Opinião de quem já fez serviço com a gente.</p>
+    <div id="lista" class="ops"></div>
+
+    <form id="fOp">
+      <h3 style="color:var(--azul);margin-bottom:4px">Já fez serviço com a Aki Forros?</h3>
+      <p style="color:#555;font-size:.92rem">Deixe sua opinião. Ela é enviada para a equipe e pode aparecer aqui no site.</p>
+      <div class="row">
+        <div><label for="p-nome">Seu nome</label><input id="p-nome" required></div>
+        <div><label for="p-cid">Bairro / Cidade</label><input id="p-cid" required></div>
+      </div>
+      <label>Sua nota</label>
+      <div class="estrelas">
+        <input type="radio" name="nota" id="n5" value="5" checked><label for="n5">★</label>
+        <input type="radio" name="nota" id="n4" value="4"><label for="n4">★</label>
+        <input type="radio" name="nota" id="n3" value="3"><label for="n3">★</label>
+        <input type="radio" name="nota" id="n2" value="2"><label for="n2">★</label>
+        <input type="radio" name="nota" id="n1" value="1"><label for="n1">★</label>
+      </div>
+      <label for="p-txt">Sua opinião</label>
+      <textarea id="p-txt" rows="3" required placeholder="Conte como foi o serviço"></textarea>
+      <button class="btn btn-w" type="submit">⭐ Enviar minha opinião</button>
+    </form>
+  </div>
+</section>
+
+<section class="contato dif" id="contato">
+  <div class="wrap">
+    <h2>Fale com a gente</h2>
+    <p class="sub">Venha conhecer a loja ou chame no WhatsApp.</p>
+    <div class="grid">
+      <div class="info">
+        <p><b>📍 Endereço</b><br>R. Santos Dumont, 375 – Centro<br>Paulo Afonso – BA</p>
+        <p><b>📞 Telefone fixo</b><br><a href="tel:+557536921485">(75) 3692-1485</a></p>
+        <p><b>💬 WhatsApp</b><br>Juba: <a data-wpp="Juba" href="#"><u>(75) 99171-2028</u></a><br>Galego: <a data-wpp="Galego" href="#"><u>(75) 98803-4765</u></a></p>
+        <p><b>📸 Instagram</b><br><a href="https://www.instagram.com/aki_forros/" target="_blank" rel="noopener"><u>@aki_forros</u></a><br><a href="https://www.instagram.com/juba_aki_forros/" target="_blank" rel="noopener"><u>@Juba_aki_forros</u></a></p>
+      </div>
+      <iframe class="mapa" loading="lazy" title="Localização Aki Forros" src="https://www.google.com/maps?q=R.+Santos+Dumont,+375,+Centro,+Paulo+Afonso+-+BA&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p><b>AKI FORROS</b> – A sua casa mais bela!</p>
+  <p>R. Santos Dumont, 375 – Centro – Paulo Afonso – BA</p>
+  <p style="margin-top:8px;opacity:.7">Site por Digital Chevalier Card (DCC)</p>
+</footer>
+
+<div class="flut">
+  <a data-wpp="Juba" href="#">💬 Juba</a>
+  <a data-wpp="Galego" href="#">💬 Galego</a>
+</div>
+
+<script>
+/* ====== CONFIGURAÇÃO ====== */
+var NUMEROS = { Juba: "5575991712028", Galego: "5575988034765" };
+var MSG_PADRAO = "Olá! Vim pelo site da Aki Forros e quero fazer um orçamento.";
+
+/* Depoimentos reais aprovados pelos donos entram aqui.
+   Formato: { nome:"Maria", cidade:"Paulo Afonso", nota:5, texto:"Ficou lindo!" } */
+var DEPOIMENTOS = [
+  // { nome:"", cidade:"", nota:5, texto:"" },
+];
+/* ========================== */
+
+function wpp(quem, msg){
+  return "https://wa.me/" + NUMEROS[quem] + "?text=" + encodeURIComponent(msg || MSG_PADRAO);
+}
+document.querySelectorAll("[data-wpp]").forEach(function(el){
+  el.href = wpp(el.dataset.wpp, el.dataset.msg);
+  el.target = "_blank"; el.rel = "noopener";
+});
+
+function esc(s){var d=document.createElement("div");d.textContent=s;return d.innerHTML}
+function estrelas(n){return "★".repeat(n)+"☆".repeat(5-n)}
+
+/* Mostra depoimentos aprovados + opiniões enviadas neste aparelho */
+function render(){
+  var locais = [];
+  try{ locais = JSON.parse(localStorage.getItem("aki_ops")||"[]"); }catch(e){}
+  var todos = DEPOIMENTOS.concat(locais);
+  var box = document.getElementById("lista");
+  if(!todos.length){
+    box.innerHTML = '<div class="vazio" style="grid-column:1/-1">⭐ Seja o primeiro a avaliar a Aki Forros! Sua opinião ajuda outras pessoas da região.</div>';
+    return;
+  }
+  box.innerHTML = todos.map(function(o){
+    return '<div class="op"><div class="est">'+estrelas(o.nota)+'</div><p>“'+esc(o.texto)+'”</p><small><b>'+esc(o.nome)+'</b> – '+esc(o.cidade)+'</small></div>';
+  }).join("");
+}
+render();
+
+document.getElementById("fOrc").addEventListener("submit", function(e){
+  e.preventDefault();
+  var g = function(id){return document.getElementById(id).value.trim()};
+  var msg = "Olá! Vim pelo site da Aki Forros.\n\n" +
+    "*Nome:* " + g("o-nome") + "\n" +
+    "*Local:* " + g("o-bairro") + "\n" +
+    "*Serviço:* " + g("o-serv") + "\n" +
+    (g("o-m2") ? "*Tamanho:* " + g("o-m2") + " m²\n" : "") +
+    (g("o-obs") ? "*Obs.:* " + g("o-obs") + "\n" : "") +
+    "\nPode me passar um orçamento?";
+  window.open(wpp(g("o-quem"), msg), "_blank");
+});
+
+document.getElementById("fOp").addEventListener("submit", function(e){
+  e.preventDefault();
+  var g = function(id){return document.getElementById(id).value.trim()};
+  var nota = parseInt(document.querySelector('input[name="nota"]:checked').value,10);
+  var op = { nome:g("p-nome"), cidade:g("p-cid"), nota:nota, texto:g("p-txt") };
+  try{
+    var arr = JSON.parse(localStorage.getItem("aki_ops")||"[]");
+    arr.unshift(op); localStorage.setItem("aki_ops", JSON.stringify(arr.slice(0,20)));
+  }catch(err){}
+  render();
+  var msg = "⭐ *Nova opinião sobre a Aki Forros*\n\n*Nome:* "+op.nome+"\n*Local:* "+op.cidade+
+            "\n*Nota:* "+nota+"/5\n*Opinião:* "+op.texto;
+  window.open(wpp("Juba", msg), "_blank");
+  e.target.reset();
+});
+</script>
+</body>
+</html>
